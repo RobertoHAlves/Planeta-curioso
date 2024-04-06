@@ -1,0 +1,37 @@
+@charset 'UTF-8';
+
+body{
+    background-color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: aquamarine;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+header > h1 {
+    
+}
+article {
+    background-color: rgba(131, 95, 199, 0.753);
+    padding: 10px;
+}
+footer {
+
+    background-color: var(--cor5);
+    color: white;
+    text-align: 0.8em;
+    padding: 5px;
+    text-align: center;
+}
+footer a {
+    color: darkorchid;
+    text-decoration: none;
+    font-size: bolder;
+    
+}
+footer a:hover {
+    text-decoration: underline;
+    color:white;
+}
