@@ -40,9 +40,12 @@ main{
     
 }
 header{
+    background-image: url(img/gg.jpg);
     color: white;
     text-align: center;
     background-color: #02065942;
+    background-repeat: no-repeat;
+    background-size: auto;
 
     min-width: 320px;
     max-width: 1000px;
