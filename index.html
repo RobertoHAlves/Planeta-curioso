@@ -29,16 +29,23 @@
         
             <section class="mercurio">
             <h2>Mercúrio</h2>
+
+                 <p>O menor planeta do nosso sistema solar, Mercúrio, tem uma órbita única que o faz parecer que gira duas vezes ao redor do Sol por cada três vezes que gira em torno de seu próprio eixo. Isso cria um efeito de "dia" duas vezes mais longo que seu "ano". Além disso, suas temperaturas extremas variam drasticamente, atingindo temperaturas superiores a 400°C durante o dia e caindo para -180°C durante a noite devido à falta de atmosfera para reter o calor.</p>
+
+                 <nav>
+                         <p onclick="mostrarBox()">Clique aqui para ver mais informações.</p>
+                 </nav>
+
+                <div id="minhaBox" class="box">
+                   
+                         <p><strong>Composição Atmosférica:</strong> Mercúrio tem uma atmosfera muito fina composta principalmente de oxigênio, sódio, hidrogênio, hélio e traços de outros gases.
+                         </p>
+                
+                         <p><strong>Probabilidade de Vida Humana:</strong> Muito baixa. As condições extremas de temperatura e a falta de uma atmosfera densa tornam Mercúrio inadequado para a vida humana.</p>
+            </div>
+
+        </section>
         
-                <p>O menor planeta do nosso sistema solar, Mercúrio, tem uma órbita única que o faz parecer que gira duas vezes ao redor do Sol por cada três vezes que gira em torno de seu próprio eixo. Isso cria um efeito de "dia" duas vezes mais longo que seu "ano". Além disso, suas temperaturas extremas variam drasticamente, atingindo temperaturas superiores a 400°C durante o dia e caindo para -180°C durante a noite devido à falta de atmosfera para reter o calor.
-                </p>
-
-        </section>
-        <section class="p1">
-                <p><strong>Composição Atmosférica:</strong> Mercúrio tem uma atmosfera muito fina composta principalmente de oxigênio, sódio, hidrogênio, hélio e traços de outros gases.
-                <strong>Probabilidade de Vida Humana:</strong> Muito baixa. As condições extremas de temperatura e a falta de uma atmosfera densa tornam Mercúrio inadequado para a vida humana.</p>
-        </section>
-
         <section class="venus">
                 <h2>Vênus</h2>
 
@@ -128,6 +135,22 @@
             </aside>
 
         </article>
+        <p onclick="mostrarBox()">Clique aqui para ver mais informações.</p>
+                <div id="minhaBox" class="box">
+                        <p>Este é o texto expandido.</p>
+                        <p>Aqui você pode adicionar mais detalhes.</p>
+                </div>
+                <script>
+                        function mostrarBox() {
+                            var box = document.getElementById("minhaBox");
+                            if (box.style.display === "none") {
+                                box.style.display = "block";
+                            } else {
+                                box.style.display = "none";
+                            }
+                            box.classList.toggle("visible");
+                        }
+                </script>
     </main>
     <footer><p>Site criado por <a href="https://github.com/RobertoHAlves" target="_blank">Roberto Henrique Alves Bezerra</a>.</p></footer>
 </body>
