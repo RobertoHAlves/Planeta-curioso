@@ -51,9 +51,12 @@ main{
     display: none; /* Inicialmente escondido */
     background-color: #1da6cf2a;
     color: white;
+    font-size: 1em;
     border: 1px solid #ccc;
     border-radius: 10px 10px;
     padding: 20px;
+    max-height: 450px;
+    overflow: auto;
     margin-bottom: 20px;
     margin-top: 0; /* Inicialmente sem margem superior */
     transition: margin-top 1.5s linearetc.ease-in-out; /* ease, ease-in, ease-out, ease-in-out, linearetc.ease-in-out */
@@ -84,7 +87,7 @@ nav{
     min-width: 290px;
     max-width: 950px;
     margin: auto;
-    text-shadow: 3px 3px 30px rgba(0, 0, 0, 0.438);
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.438);
 }
 nav > a{
 
@@ -131,14 +134,16 @@ article {
 }
 section{
     text-align: justify;
-    font-family: var(--font01);
-    font-size: 1.2em;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 1.0em;
+    box-shadow: 1px solid black;
+    background-color: #0104401e;
 }
 section.mercurio{
     color: white;
     background-image: url(img/mercuiro.jpeg);
-    background-position: left center;
-    background-size: auto;
+    background-position: center;
+    background-size: cover;
     max-height: 900px;
     border-radius: 26px 26px 0px 0px;
     padding: 50px 20px 50px 20px;
